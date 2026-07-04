@@ -221,7 +221,7 @@ struct NotchGeometry {
         let topInset = screen.safeAreaInsets.top
         let looksNotched = screen.localizedName.contains("Built-in") && topInset >= 24 && f.width >= 1400
 
-        let notchWidth: CGFloat = looksNotched ? 210 : 240
+        let notchWidth: CGFloat = looksNotched ? 273 : 312
         let notchHeight: CGFloat = looksNotched ? max(32, topInset + 2) : 42
         let width = notchWidth
         let height = notchHeight + 133
@@ -244,7 +244,7 @@ struct NotchOverlayView: View {
                 VerticalPromptText(script: model.script, offset: model.offset)
                     .frame(maxWidth: .infinity, maxHeight: 133)
                     .padding(.horizontal, 14)
-                    .background(.black, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
+                    .background(.black, in: UnevenRoundedRectangle(cornerRadii: .init(topLeading: 0, bottomLeading: 18, bottomTrailing: 18, topTrailing: 0), style: .continuous))
                     .padding(.top, -8)
             }
         }
