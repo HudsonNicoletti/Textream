@@ -224,7 +224,7 @@ struct NotchGeometry {
         let notchWidth: CGFloat = looksNotched ? 210 : 240
         let notchHeight: CGFloat = looksNotched ? max(32, topInset + 2) : 42
         let width = notchWidth
-        let height = notchHeight + 200
+        let height = notchHeight + 133
         let x = f.midX - width / 2
         let y = f.maxY - height
         return NotchGeometry(frame: CGRect(x: x, y: y, width: width, height: height), hasPhysicalNotch: looksNotched)
@@ -238,14 +238,14 @@ struct NotchOverlayView: View {
         ZStack {
             VStack(spacing: 0) {
                 NotchShape()
-                    .fill(.black.opacity(model.overlayOpacity))
+                    .fill(.black)
                     .frame(height: 42)
 
                 VerticalPromptText(script: model.script, offset: model.offset)
-                    .frame(maxWidth: .infinity, maxHeight: 200)
+                    .frame(maxWidth: .infinity, maxHeight: 133)
                     .padding(.horizontal, 14)
-                    .background(.black.opacity(0.72), in: RoundedRectangle(cornerRadius: 18, style: .continuous))
-                    .padding(.top, 6)
+                    .background(.black, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
+                    .padding(.top, -8)
             }
         }
         .accessibilityLabel("Textream teleprompter overlay")
