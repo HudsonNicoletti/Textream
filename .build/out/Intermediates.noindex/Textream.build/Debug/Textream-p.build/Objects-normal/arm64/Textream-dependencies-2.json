@@ -1,0 +1,758 @@
+[
+  {
+    "isFramework" : true,
+    "moduleName" : "AVFAudio",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/AVFAudio-3T8B8IXMLSYSW.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "AVFoundation",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/AVFoundation-LA705EOBCBF8.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "Accessibility",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/Accessibility-1OCX7SNPQH5V3.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "AppKit",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/AppKit-3RU3W5E5F2H6M.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "AudioToolbox",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/AudioToolbox-11EPN65AN66DK.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "ColorSync",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/ColorSync-3ME9OUODCNV9I.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "Combine",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/Combine-145O4PYI062JU.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "CoreAudio",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/CoreAudio-2AF71HU7DGMX9.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "CoreData",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/CoreData-272DNMGNJGMH.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "CoreFoundation",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/CoreFoundation-2GXC3EMHUIQ88.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "CoreGraphics",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/CoreGraphics-272KJ2BVCT4A3.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "CoreImage",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/CoreImage-2DSORB7KAPNX3.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "CoreMIDI",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/CoreMIDI-298NPG4RTB3KN.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "CoreMedia",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/CoreMedia-YTYA9YNBIMCD.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "CoreText",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/CoreText-3S0KSZ77ROAP8.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "CoreTransferable",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/CoreTransferable-1X3QHOYZ6WX34.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "CoreVideo",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/CoreVideo-3JX7PLIECSEPY.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "Darwin",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/Darwin-3PJ26TSEH2Y4Y.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "DataDetection",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/DataDetection-14Y49SAA093QU.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "DeveloperToolsSupport",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/DeveloperToolsSupport-3FIKCG9TGF5U2.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "Dispatch",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/Dispatch-31LOFULMDZFRW.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "Foundation",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/Foundation-1JL6R5Q3516V9.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "IOKit",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/IOKit-1XG0KWALIBOYP.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "ImageIO",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/ImageIO-25EKGJ4NK6YTX.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "MediaToolbox",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/MediaToolbox-2FNCEFBF6VZ3H.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "Metal",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/Metal-2AJNCLROLRT2U.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "OSLog",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/OSLog-265134D0XZ8AP.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "ObjectiveC",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/ObjectiveC-HETDDI2YVTYI.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "Observation",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/Observation-25KDC8CO7CAWO.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "QuartzCore",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/QuartzCore-1A8DVK08O5ZZL.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "Spatial",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/Spatial-JJHV1FBVXT8E.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "Swift",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/Swift-2VXJC7XZLJHK6.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "SwiftOnoneSupport",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/SwiftOnoneSupport-OUL3NORJBC3V.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "SwiftUI",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/SwiftUI-1L5XLC21E9NCI.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "SwiftUICore",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/SwiftUICore-14DXNM6L8RFXR.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "Symbols",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/Symbols-2GTATAN28DBA8.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "Synchronization",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/Synchronization-3IHVK25L7DRSV.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "System",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/System-NTPU0TKDWWMN.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "UniformTypeIdentifiers",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/UniformTypeIdentifiers-F8B5ZPV3OEVQ.swiftmodule"
+  },
+  {
+    "isFramework" : true,
+    "moduleName" : "VideoToolbox",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/VideoToolbox-SH1NYGXFCANU.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "XPC",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/XPC-2M1EOYTX39SSZ.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "_Builtin_float",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/_Builtin_float-2MIKYZIKNWV0D.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "_Concurrency",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/_Concurrency-1QNN77ATR9B3D.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "_DarwinFoundation1",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/_DarwinFoundation1-19ZE8T8ECXK1L.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "_DarwinFoundation2",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/_DarwinFoundation2-3TL5Y0XFRU2FB.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "_DarwinFoundation3",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/_DarwinFoundation3-1KB7B27SVUZAS.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "_StringProcessing",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/_StringProcessing-2SAURPMWUIYL8.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "os",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/os-2SSP5EV03BAJ9.swiftmodule"
+  },
+  {
+    "isFramework" : false,
+    "moduleName" : "simd",
+    "modulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/simd-2R78SUES930W2.swiftmodule"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/AVFAudio.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/AVFAudio-5PUG9B2JXAPF1XMGAE5YNKVT7.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "AVFAudio"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/AVFoundation.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/AVFoundation-CZPITRYR3QC4USDUNR7KFRPEP.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "AVFoundation"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/Accessibility.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/Accessibility-ALIAJAREL3CYMBNUCIAK9882J.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Accessibility"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/AppKit.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/AppKit-BOV70REDW3BVBGISRF4X9238A.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "AppKit"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/ApplicationServices.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/ApplicationServices-2HP8RASGVFEGDZ1OLM9XANFGJ.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "ApplicationServices"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/AudioToolbox.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/AudioToolbox-2W8T2C16QEZZF1PELKN3K6LYJ.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "AudioToolbox"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CFNetwork.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/CFNetwork-5D05N44XZKO9W353W55ZINRXA.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CFNetwork"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/cups.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/CUPS-92FSJ5GYNCMEC16D11UMKE1Q1.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CUPS"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/Carbon.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/Carbon-9KKA9IZ2JGXVNWO071EMA0UAJ.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Carbon"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/ColorSync.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/ColorSync-8PPQM4N6VJ233VL0CFZYXFEU3.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "ColorSync"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreAudio.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/CoreAudio-7YDGYCY4W6BP7I2098I396N6I.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreAudio"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreAudioTypes.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/CoreAudioTypes-9H154V306D0BX102T6IBANPEM.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreAudioTypes"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreData.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/CoreData-90V8SILSEX5BLTJ0X2330SKDK.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreData"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreFoundation.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/CoreFoundation-2QVXJJAXXADT84JMU967ZGQU1.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreFoundation"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreGraphics.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/CoreGraphics-DSQ6LLWOIUJZXD1LBRG5C1SKO.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreGraphics"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreImage.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/CoreImage-DX4YRACSEDRYVM04YCOOUONE9.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreImage"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreMIDI.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/CoreMIDI-39LFMG1AF6UKT93BEZDQ11QB.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreMIDI"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreMedia.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/CoreMedia-6KWHET2FLIJR9DHFM32MIK8JL.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreMedia"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreServices.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/CoreServices-AG3CRI69N9ZLY7EFSCL0MCQLW.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreServices"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreText.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/CoreText-606F7L5BI069MOJ5WBAA9P0HS.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreText"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreTransferable.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/CoreTransferable-DJSU7MOQE3C7F7U2HRUH3DZT4.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreTransferable"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreVideo.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/CoreVideo-DTBXK7I8YAPYH6VTYFYSN1ZE4.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "CoreVideo"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/Darwin.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/Darwin-8J1LL8H3MW8LHC7U0NAJ9MGKQ.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Darwin"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/DataDetection.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/DataDetection-FR04G9XHW5RSH4YLOOXFDOU3.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "DataDetection"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/DeveloperToolsSupport.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/DeveloperToolsSupport-EP3P070ELL0AJJ414IOMCJVLG.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "DeveloperToolsSupport"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/DiskArbitration.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/DiskArbitration-2KUSADVYOM7HZ4PHG5H00PV18.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "DiskArbitration"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/dispatch.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/Dispatch-F0BHVD8MRN47917OGOX1NRRR9.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Dispatch"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/Foundation.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/Foundation-11SYLIJXYHG0E1MPI94TSMIPA.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Foundation"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/IOKit.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/IOKit-3YQZMVTXHT9W4YGRAR6LVYBEZ.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "IOKit"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/IOSurface.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/IOSurface-11CF17WHL6N9TLH52E34S6V4B.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "IOSurface"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/ImageIO.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/ImageIO-9H0CLRG9RF2GRMDML2EIV5U3K.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "ImageIO"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/DarwinBasic.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/MachO-3XKAQQ2EJO5TD91UCM8H7DICT.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "MachO"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/MediaToolbox.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/MediaToolbox-E4Q72C7F8E6XFPYKV5P7VM8DX.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "MediaToolbox"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/Metal.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/Metal-ASOPQ5TG4BBAMRPGY0Z9TZGRZ.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Metal"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/OSLog.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/OSLog-3D12OR894QBZMHC58JW86ZVC3.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "OSLog"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/ObjectiveC.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/ObjectiveC-3JI3ILVDYLIUVZMSTJYYDEYII.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "ObjectiveC"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/OpenGL.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/OpenGL-AAT8CKGKZNMX6E4AF4P1FVY6Q.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "OpenGL"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/QuartzCore.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/QuartzCore-AAAOWCHTPLY7N1JACXG05GLKK.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "QuartzCore"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/Security.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/Security-46CT5PSR21E5S7Q9HAUI4ZIRJ.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Security"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/Spatial\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/Spatial-5BV57AAIRI16H8K816EXIBB0Y.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Spatial"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/lib\/swift\/shims\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/SwiftShims-2PA0YGSHMG1CCRZVIAHWM5P4F.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "SwiftShims"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/SwiftUI.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/SwiftUI-2IFW08V1YWGP4F8PZLJK6EUPY.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "SwiftUI"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/SwiftUICore.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/SwiftUICore-XYM2AYZ5G4CV4GKLVKVVM2EP.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "SwiftUICore"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/Symbols.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/Symbols-6VJWKHJ2DXP9UC4SS119EG5J5.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "Symbols"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/UniformTypeIdentifiers.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/UniformTypeIdentifiers-99I0RIXHSG1WQPALPV7M5RI7L.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "UniformTypeIdentifiers"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/VideoToolbox.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/VideoToolbox-1VU0Z5GXF56M31L7W4RS2D3DC.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "VideoToolbox"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/xpc.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/XPC-33GGXS1U424F6T43IUJF8H091.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "XPC"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/DarwinFoundation1.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/_AvailabilityInternal-2K8QKR0LE0072X5DI1Q1Z9MYH.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_AvailabilityInternal"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/_Builtin_float-GE7W64HP0O2SJL9LRVXL4J11.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_float"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/_Builtin_intrinsics-4SB92E5SJSDAP067PMZZ4933.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_intrinsics"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/_Builtin_inttypes-5XECCHD2NGX1TZK19W9DZ1JYE.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_inttypes"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/_Builtin_limits-7T4F5WQANEN5BQZXWCFKKV4SG.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_limits"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/_Builtin_stdarg-5XSB8IIWI636MVWR9AVA4CPV2.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_stdarg"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/_Builtin_stdatomic-8PQYBR1JEKKT85EK632XJUU7B.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_stdatomic"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/_Builtin_stdbool-8RP2VC4GNQR9WFG1TO571Q8T6.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_stdbool"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/_Builtin_stddef-8Z8WE5TL5N4UVMOT0C2ESQ984.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_stddef"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/_Builtin_stdint-53CFFO2KQ892Q1T2TH4UOZP0F.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_stdint"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/_Builtin_tgmath-7XZ62SEBJ41RQUEP8MVNUFZPX.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_Builtin_tgmath"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/DarwinFoundation1.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/_DarwinFoundation1-7VM3T8I9HEWVBVQBJAL9EAXBW.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_DarwinFoundation1"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/DarwinFoundation2.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/_DarwinFoundation2-9J19HQLVEEPSRXCFOXK54WDIL.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_DarwinFoundation2"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/DarwinFoundation3.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/_DarwinFoundation3-8O2HU4AEZBDVKYF3677DBD3M0.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_DarwinFoundation3"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/lib\/swift\/shims\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/_SwiftConcurrencyShims-EH38IPIYP9JEC36XIV7DWPFCS.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "_SwiftConcurrencyShims"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/launch.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/launch-AUJ0IR86K858O8XC1WARKVRN7.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "launch"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/libDER\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/libDER-56JE2J9VIQ9ALTYLG5XIHU300.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "libDER"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/libkern.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/libkern-FAF2BGX3NZ55YXA6UGL3YF4G.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "libkern"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/os.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/os-5W9BTAJO8QE5BHUC1OG11HZ7S.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "os"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/os.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/os_object-6EZ71QAPSSW2HVGAKSRLY64B0.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "os_object"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/os.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/os_workgroup-14H4K5D4BXIKY3D6A4VFBWFPE.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "os_workgroup"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/ptrauth-EQBN643YHXJL42VYXFRI9B9JV.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "ptrauth"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/ptrcheck-C0DOUT14H0BI1HLKTZS4VB8RL.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "ptrcheck"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/simd\/module.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/simd-9YXOJH60MVIBGCWJW3GLMDY2P.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "simd"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/c_standard_library.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/string_h-60Z048NINGXQ82U4Q4V7ZVCCN.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "string_h"
+  },
+  {
+    "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/DarwinFoundation2.modulemap",
+    "clangModulePath" : "\/Users\/hudsonnicoletti\/Textream\/.build\/out\/ModuleCache.noindex\/sys_types-5YXFCTYY3JRP8Z9AT3T6WKP5I.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "sys_types"
+  }
+]

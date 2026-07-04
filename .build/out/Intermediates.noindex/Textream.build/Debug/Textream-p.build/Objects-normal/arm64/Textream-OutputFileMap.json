@@ -1,0 +1,19 @@
+{
+  "" : {
+    "diagnostics" : "/Users/hudsonnicoletti/Textream/.build/out/Intermediates.noindex/Textream.build/Debug/Textream-p.build/Objects-normal/arm64/Textream-primary.dia",
+    "emit-module-dependencies" : "/Users/hudsonnicoletti/Textream/.build/out/Intermediates.noindex/Textream.build/Debug/Textream-p.build/Objects-normal/arm64/Textream-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/hudsonnicoletti/Textream/.build/out/Intermediates.noindex/Textream.build/Debug/Textream-p.build/Objects-normal/arm64/Textream-primary-emit-module.dia",
+    "pch" : "/Users/hudsonnicoletti/Textream/.build/out/Intermediates.noindex/Textream.build/Debug/Textream-p.build/Objects-normal/arm64/Textream-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/hudsonnicoletti/Textream/.build/out/Intermediates.noindex/Textream.build/Debug/Textream-p.build/Objects-normal/arm64/Textream-primary.swiftdeps"
+  },
+  "/Users/hudsonnicoletti/Textream/Sources/Textream/TextreamApp.swift" : {
+    "const-values" : "/Users/hudsonnicoletti/Textream/.build/out/Intermediates.noindex/Textream.build/Debug/Textream-p.build/Objects-normal/arm64/TextreamApp.swiftconstvalues",
+    "dependencies" : "/Users/hudsonnicoletti/Textream/.build/out/Intermediates.noindex/Textream.build/Debug/Textream-p.build/Objects-normal/arm64/TextreamApp.d",
+    "diagnostics" : "/Users/hudsonnicoletti/Textream/.build/out/Intermediates.noindex/Textream.build/Debug/Textream-p.build/Objects-normal/arm64/TextreamApp.dia",
+    "index-unit-output-path" : "/Textream.build/Debug/Textream-p.build/Objects-normal/arm64/TextreamApp.o",
+    "llvm-bc" : "/Users/hudsonnicoletti/Textream/.build/out/Intermediates.noindex/Textream.build/Debug/Textream-p.build/Objects-normal/arm64/TextreamApp.bc",
+    "object" : "/Users/hudsonnicoletti/Textream/.build/out/Intermediates.noindex/Textream.build/Debug/Textream-p.build/Objects-normal/arm64/TextreamApp.o",
+    "swift-dependencies" : "/Users/hudsonnicoletti/Textream/.build/out/Intermediates.noindex/Textream.build/Debug/Textream-p.build/Objects-normal/arm64/TextreamApp.swiftdeps",
+    "swiftmodule" : "/Users/hudsonnicoletti/Textream/.build/out/Intermediates.noindex/Textream.build/Debug/Textream-p.build/Objects-normal/arm64/TextreamApp~partial.swiftmodule"
+  }
+}

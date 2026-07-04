@@ -1,0 +1,4 @@
+module Textream {
+header "Textream-Swift.h"
+export *
+}
