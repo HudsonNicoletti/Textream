@@ -1,10 +1,9 @@
+![Textream App Icon](./AppIcon.appiconset/128.png)
 # Textream
 
 Textream is a tiny macOS teleprompter that lives around the MacBook notch. Paste a script, press Play, and it scrolls while you speak. Stop speaking and it pauses.
 
 Built with SwiftUI, AppKit, and AVAudioEngine. No third-party dependencies.
-
-<a href="https://www.buymeacoffee.com/hudsonnicoletti"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee 🙏🏻&emoji=☕&slug=hudsonnicoletti&button_colour=5F7FFF&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00" /></a>
 
 ## Features
 
@@ -98,13 +97,11 @@ Hardware varies. If overlay placement needs adjustment, edit these constants in 
 - default overlay height (`notchHeight + 133`)
 - top overlap (`.padding(.top, -8)`)
 
-## Release build
-
-```bash
-swift build -c release
-```
-
-For Apple publishing, see [docs/apple-publishing.md](docs/apple-publishing.md).
+<p align="center">
+  <a href="https://www.buymeacoffee.com/hudsonnicoletti">
+    <img src="https://www.owlstown.com/assets/icons/bmc-yellow-button-941f96a1.png" width="240" />
+  </a>
+</p>
 
 ## Contributing
 
