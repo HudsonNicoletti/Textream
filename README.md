@@ -4,6 +4,8 @@ Textream is a tiny macOS teleprompter that lives around the MacBook notch. Paste
 
 Built with SwiftUI, AppKit, and AVAudioEngine. No third-party dependencies.
 
+<a href="https://www.buymeacoffee.com/hudsonnicoletti"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee 🙏🏻&emoji=☕&slug=hudsonnicoletti&button_colour=5F7FFF&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00" /></a>
+
 ## Features
 
 - Notch-centered teleprompter overlay
