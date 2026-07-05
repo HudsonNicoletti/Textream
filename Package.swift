@@ -3,7 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "Textream",
-    platforms: [.macOS(.v14)],
+    platforms: [.macOS("14.7")],
     products: [
         .executable(name: "Textream", targets: ["Textream"])
     ],

@@ -16,6 +16,16 @@ struct TextreamApp: App {
                 .onAppear { appDelegate.bind(model) }
         }
         .windowResizability(.contentSize)
+        .commands {
+            CommandMenu("Prompter") {
+                Button("Back") { model.nudge(-120) }
+                    .keyboardShortcut(.upArrow, modifiers: [])
+                Button("Forward") { model.nudge(120) }
+                    .keyboardShortcut(.downArrow, modifiers: [])
+                Button("Reset") { model.reset() }
+                    .keyboardShortcut(.leftArrow, modifiers: [.command])
+            }
+        }
     }
 }
 
@@ -36,6 +46,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 @MainActor
 final class TeleprompterModel: ObservableObject {
     private static let scriptKey = "teleprompter.script"
+    private static let fontSizeKey = "teleprompter.fontSize"
+    private static let textColorRedKey = "teleprompter.textColor.red"
+    private static let textColorGreenKey = "teleprompter.textColor.green"
+    private static let textColorBlueKey = "teleprompter.textColor.blue"
     private static let defaultScript = "Paste your script here.\n\nTextream scrolls while you speak and pauses when you stop."
 
     @Published var script: String {
@@ -43,7 +57,14 @@ final class TeleprompterModel: ObservableObject {
     }
     @Published var isPlaying = false
     @Published var isSpeaking = false
+    @Published var hoverPaused = false
     @Published var speed: Double = 42
+    @Published var fontSize: Double = 17 {
+        didSet { UserDefaults.standard.set(fontSize, forKey: Self.fontSizeKey) }
+    }
+    @Published var textColor = Color.white {
+        didSet { saveTextColor() }
+    }
     @Published var offset: CGFloat = 0
     @Published var sensitivity: Double = -42
     @Published var overlayOpacity: Double = 0.96
@@ -55,9 +76,12 @@ final class TeleprompterModel: ObservableObject {
 
     init() {
         script = UserDefaults.standard.string(forKey: Self.scriptKey) ?? Self.defaultScript
+        let savedFontSize = UserDefaults.standard.double(forKey: Self.fontSizeKey)
+        if savedFontSize > 0 { fontSize = savedFontSize }
+        textColor = Self.loadTextColor()
     }
 
-    var shouldScroll: Bool { isPlaying && isSpeaking }
+    var shouldScroll: Bool { isPlaying && isSpeaking && !hoverPaused }
 
     func togglePlayback() {
         isPlaying.toggle()
@@ -82,6 +106,28 @@ final class TeleprompterModel: ObservableObject {
 
     func reset() {
         offset = 0
+    }
+
+    func nudge(_ amount: CGFloat) {
+        offset = max(0, offset + amount)
+    }
+
+    private static func loadTextColor() -> Color {
+        let defaults = UserDefaults.standard
+        guard defaults.object(forKey: textColorRedKey) != nil else { return .white }
+        return Color(
+            red: defaults.double(forKey: textColorRedKey),
+            green: defaults.double(forKey: textColorGreenKey),
+            blue: defaults.double(forKey: textColorBlueKey)
+        )
+    }
+
+    private func saveTextColor() {
+        guard let color = NSColor(textColor).usingColorSpace(.sRGB) else { return }
+        let defaults = UserDefaults.standard
+        defaults.set(color.redComponent, forKey: Self.textColorRedKey)
+        defaults.set(color.greenComponent, forKey: Self.textColorGreenKey)
+        defaults.set(color.blueComponent, forKey: Self.textColorBlueKey)
     }
 
     private func stopScrollOnly() {
@@ -209,6 +255,7 @@ final class NotchOverlayController {
         w.backgroundColor = .clear
         w.level = .statusBar
         w.collectionBehavior = [.canJoinAllSpaces, .stationary, .ignoresCycle]
+        w.sharingType = .none
         w.hidesOnDeactivate = false
         w.hasShadow = false
         w.minSize = NSSize(width: 220, height: 120)
@@ -252,17 +299,42 @@ struct NotchOverlayView: View {
                     .fill(.black)
                     .frame(height: 42)
 
-                VerticalPromptText(script: model.script, offset: model.offset)
+                VerticalPromptText(script: model.script, offset: model.offset, fontSize: model.fontSize, textColor: model.textColor)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .padding(.horizontal, 14)
                     .background(.black, in: UnevenRoundedRectangle(cornerRadii: .init(topLeading: 0, bottomLeading: 18, bottomTrailing: 18, topTrailing: 0), style: .continuous))
                     .padding(.top, -8)
             }
+            ScrollWheelCatcher(model: model)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
             WindowResizeGrip()
                 .frame(width: 20, height: 20)
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
         }
+        .onHover { model.hoverPaused = $0 }
         .accessibilityLabel("Textream teleprompter overlay")
+    }
+}
+
+struct ScrollWheelCatcher: NSViewRepresentable {
+    let model: TeleprompterModel
+
+    func makeNSView(context: Context) -> ScrollWheelView {
+        let view = ScrollWheelView()
+        view.model = model
+        return view
+    }
+
+    func updateNSView(_ view: ScrollWheelView, context: Context) {
+        view.model = model
+    }
+}
+
+final class ScrollWheelView: NSView {
+    weak var model: TeleprompterModel?
+
+    override func scrollWheel(with event: NSEvent) {
+        Task { @MainActor in model?.nudge(CGFloat(event.scrollingDeltaY)) }
     }
 }
 
@@ -324,12 +396,14 @@ final class ResizeGripView: NSView {
 struct VerticalPromptText: View {
     let script: String
     let offset: CGFloat
+    let fontSize: Double
+    let textColor: Color
 
     var body: some View {
         GeometryReader { proxy in
             ScrollView(.vertical) {
                 Text(script.isEmpty ? "Textream" : script)
-                    .font(.system(size: 17, weight: .semibold, design: .rounded))
+                    .font(.system(size: fontSize, weight: .semibold, design: .rounded))
                     .multilineTextAlignment(.center)
                     .frame(width: proxy.size.width)
                     .offset(y: -offset)
@@ -344,7 +418,7 @@ struct VerticalPromptText: View {
                 .init(color: .black, location: 0.88),
                 .init(color: .clear, location: 1)
             ], startPoint: .top, endPoint: .bottom))
-                .foregroundStyle(.white)
+                .foregroundStyle(textColor)
                 .animation(.linear(duration: 0.08), value: offset)
         }
     }
@@ -419,6 +493,14 @@ struct ControlView: View {
                 Slider(value: $model.speed, in: 10...160)
             }
             HStack {
+                Text("Font size")
+                Slider(value: $model.fontSize, in: 12...36, step: 1)
+                Text("\(Int(model.fontSize))")
+                    .monospacedDigit()
+                    .foregroundStyle(.secondary)
+            }
+            ColorPicker("Text color", selection: $model.textColor, supportsOpacity: false)
+            HStack {
                 Text("Mic sensitivity")
                 Slider(value: $model.sensitivity, in: -65 ... -25)
             }
@@ -429,7 +511,7 @@ struct ControlView: View {
         HStack {
             Text(model.micStatus)
             Spacer()
-            Text(model.shouldScroll ? "Scrolling" : "Paused")
+            Text(model.hoverPaused ? "Hover paused" : (model.shouldScroll ? "Scrolling" : "Paused"))
         }
         .font(.caption)
         .foregroundStyle(.secondary)

@@ -12,7 +12,10 @@ Built with SwiftUI, AppKit, and AVAudioEngine. No third-party dependencies.
 - Fallback notch-shaped overlay on displays without a physical notch
 - Voice activity detection using local microphone audio level
 - Automatic scroll while speaking, pause on silence
+- Hover over the prompter to pause; move away to resume
 - Adjustable scroll speed and mic sensitivity
+- Custom text color and font size
+- Manual script navigation with trackpad scroll and keyboard shortcuts
 - Script editor with paste support
 - Script persists across quit/reopen via `UserDefaults`
 - Play/Pause, Reset, Space shortcut
@@ -29,7 +32,7 @@ System Settings → Privacy & Security → Microphone → enable Textream or Ter
 
 ## Requirements
 
-- macOS 14+
+- macOS 14.7+
 - Swift 6+
 - Xcode Command Line Tools
 
@@ -51,8 +54,19 @@ Build a local `.app` bundle with icon and microphone usage description:
 
 ```bash
 scripts/build-app.sh
+scripts/validate-publishing.sh
 open .build/Textream.app
 ```
+
+## Controls
+
+- Play/Pause starts or stops mic-driven scrolling.
+- Space toggles playback.
+- Reset returns to start.
+- Hover over the overlay pauses; leaving resumes.
+- Scroll on the overlay with a trackpad to move manually.
+- Up/Down arrows move backward/forward; Command-Left resets.
+- Speed, font size, text color, and mic sensitivity are adjustable in the main window.
 
 ## Project layout
 
@@ -69,7 +83,7 @@ scripts/build-app.sh                  Local app bundle builder
 
 `VoiceActivityDetector` uses `AVAudioEngine` input taps and RMS level checks. Audio above the sensitivity threshold marks speech. A short silence hangover avoids jitter.
 
-`NotchOverlayController` creates a borderless floating `NSPanel` on all spaces.
+`NotchOverlayController` creates a borderless floating `NSPanel` on all spaces and sets `NSWindow.sharingType = .none` so it should not appear in screen sharing or window capture.
 
 `NotchGeometry` uses public `NSScreen` data. macOS does not expose exact notch bounds through public API, so Textream uses a small built-in-display heuristic and draws a fallback notch on other displays.
 
@@ -90,7 +104,7 @@ Hardware varies. If overlay placement needs adjustment, edit these constants in 
 swift build -c release
 ```
 
-For distribution, create a signed/notarized app with Xcode or your release pipeline. `scripts/build-app.sh` is intentionally local-dev only.
+For Apple publishing, see [docs/apple-publishing.md](docs/apple-publishing.md).
 
 ## Contributing
 
