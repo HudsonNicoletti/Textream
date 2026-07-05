@@ -13,6 +13,7 @@ Built with SwiftUI, AppKit, and AVAudioEngine. No third-party dependencies.
 - Adjustable scroll speed and mic sensitivity
 - Script editor with paste support
 - Play/Pause, Reset, Space shortcut
+- Live resizing from the overlay bottom-right corner
 - App icon support via `AppIcon.appiconset`
 
 ## Screens and privacy
@@ -77,7 +78,7 @@ Hardware varies. If overlay placement needs adjustment, edit these constants in 
 
 - `notchWidth`
 - `notchHeight`
-- text panel height (`133`)
+- default overlay height (`notchHeight + 133`)
 - top overlap (`.padding(.top, -8)`)
 
 ## Release build

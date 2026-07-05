@@ -202,6 +202,8 @@ final class NotchOverlayController {
         w.collectionBehavior = [.canJoinAllSpaces, .stationary, .ignoresCycle]
         w.hidesOnDeactivate = false
         w.hasShadow = false
+        w.minSize = NSSize(width: 220, height: 120)
+        w.maxSize = NSSize(width: 640, height: 360)
         window = w
     }
 
@@ -242,13 +244,71 @@ struct NotchOverlayView: View {
                     .frame(height: 42)
 
                 VerticalPromptText(script: model.script, offset: model.offset)
-                    .frame(maxWidth: .infinity, maxHeight: 133)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .padding(.horizontal, 14)
                     .background(.black, in: UnevenRoundedRectangle(cornerRadii: .init(topLeading: 0, bottomLeading: 18, bottomTrailing: 18, topTrailing: 0), style: .continuous))
                     .padding(.top, -8)
             }
+            WindowResizeGrip()
+                .frame(width: 20, height: 20)
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
         }
         .accessibilityLabel("Textream teleprompter overlay")
+    }
+}
+
+struct WindowResizeGrip: NSViewRepresentable {
+    func makeNSView(context: Context) -> ResizeGripView { ResizeGripView() }
+    func updateNSView(_ view: ResizeGripView, context: Context) {}
+}
+
+final class ResizeGripView: NSView {
+    private var startFrame = CGRect.zero
+    private var startMouse = CGPoint.zero
+    private lazy var resizeCursor = NSCursor(image: Self.resizeCursorImage(), hotSpot: CGPoint(x: 8, y: 8))
+
+    override func viewDidMoveToWindow() {
+        window?.invalidateCursorRects(for: self)
+    }
+
+    override func resetCursorRects() {
+        addCursorRect(bounds, cursor: resizeCursor)
+    }
+
+    override func mouseDown(with event: NSEvent) {
+        guard let window else { return }
+        startFrame = window.frame
+        startMouse = NSEvent.mouseLocation
+    }
+
+    override func mouseDragged(with event: NSEvent) {
+        guard let window else { return }
+        let mouse = NSEvent.mouseLocation
+        let dx = mouse.x - startMouse.x
+        let dy = mouse.y - startMouse.y
+        let centerX = startFrame.midX
+        let width = min(max(startFrame.width + (dx * 2), window.minSize.width), window.maxSize.width)
+        let height = min(max(startFrame.height - dy, window.minSize.height), window.maxSize.height)
+        window.setFrame(CGRect(x: centerX - (width / 2), y: startFrame.maxY - height, width: width, height: height), display: true)
+    }
+
+    private static func resizeCursorImage() -> NSImage {
+        let image = NSImage(size: NSSize(width: 16, height: 16))
+        image.lockFocus()
+        NSColor.white.setStroke()
+        let path = NSBezierPath()
+        path.lineWidth = 1.8
+        path.move(to: NSPoint(x: 3, y: 13))
+        path.line(to: NSPoint(x: 13, y: 3))
+        path.move(to: NSPoint(x: 3, y: 9))
+        path.line(to: NSPoint(x: 3, y: 13))
+        path.line(to: NSPoint(x: 7, y: 13))
+        path.move(to: NSPoint(x: 9, y: 3))
+        path.line(to: NSPoint(x: 13, y: 3))
+        path.line(to: NSPoint(x: 13, y: 7))
+        path.stroke()
+        image.unlockFocus()
+        return image
     }
 }
 
