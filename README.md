@@ -12,6 +12,7 @@ Built with SwiftUI, AppKit, and AVAudioEngine. No third-party dependencies.
 - Automatic scroll while speaking, pause on silence
 - Adjustable scroll speed and mic sensitivity
 - Script editor with paste support
+- Script persists across quit/reopen via `UserDefaults`
 - Play/Pause, Reset, Space shortcut
 - Live resizing from the overlay bottom-right corner
 - App icon support via `AppIcon.appiconset`

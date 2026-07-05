@@ -35,7 +35,12 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 
 @MainActor
 final class TeleprompterModel: ObservableObject {
-    @Published var script = "Paste your script here.\n\nTextream scrolls while you speak and pauses when you stop."
+    private static let scriptKey = "teleprompter.script"
+    private static let defaultScript = "Paste your script here.\n\nTextream scrolls while you speak and pauses when you stop."
+
+    @Published var script: String {
+        didSet { UserDefaults.standard.set(script, forKey: Self.scriptKey) }
+    }
     @Published var isPlaying = false
     @Published var isSpeaking = false
     @Published var speed: Double = 42
@@ -47,6 +52,10 @@ final class TeleprompterModel: ObservableObject {
     private let vad = VoiceActivityDetector()
     private var timer: Timer?
     private var lastTick = Date()
+
+    init() {
+        script = UserDefaults.standard.string(forKey: Self.scriptKey) ?? Self.defaultScript
+    }
 
     var shouldScroll: Bool { isPlaying && isSpeaking }
 
