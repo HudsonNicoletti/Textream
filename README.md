@@ -1,4 +1,4 @@
-![Textream App Icon](./AppIcon.appiconset/128.png)
+![Textream App Icon](./TextReam/Assets.xcassets/AppIcon.appiconset/128.png)
 # Textream
 
 Textream is a tiny macOS teleprompter that lives around the MacBook notch. Paste a script, press Play, and it scrolls while you speak. Stop speaking and it pauses.
@@ -19,7 +19,7 @@ Built with SwiftUI, AppKit, and AVAudioEngine. No third-party dependencies.
 - Script persists across quit/reopen via `UserDefaults`
 - Play/Pause, Reset, Space shortcut
 - Live resizing from the overlay bottom-right corner
-- App icon support via `AppIcon.appiconset`
+- App icon support in macOS and the control window via `Assets.xcassets/AppIcon.appiconset`
 
 ## Screens and privacy
 
@@ -31,30 +31,15 @@ System Settings → Privacy & Security → Microphone → enable Textream or Ter
 
 ## Requirements
 
-- macOS 14.7+
-- Swift 6+
-- Xcode Command Line Tools
-
-Check your toolchain:
-
-```bash
-swift --version
-```
+- macOS 27+
+- Xcode 27+
 
 ## Build and run
 
-From this repo:
+Open `TextReam.xcodeproj` in Xcode and run the `TextReam` scheme, or build from the command line:
 
 ```bash
-swift run Textream
-```
-
-Build a local `.app` bundle with icon and microphone usage description:
-
-```bash
-scripts/build-app.sh
-scripts/validate-publishing.sh
-open .build/Textream.app
+xcodebuild -project TextReam.xcodeproj -scheme TextReam build
 ```
 
 ## Controls
@@ -66,36 +51,6 @@ open .build/Textream.app
 - Scroll on the overlay with a trackpad to move manually.
 - Up/Down arrows move backward/forward; Command-Left resets.
 - Speed, font size, text color, and mic sensitivity are adjustable in the main window.
-
-## Project layout
-
-```text
-Package.swift                         Swift package definition
-Sources/Textream/TextreamApp.swift    App, UI, overlay, notch positioning, VAD
-AppIcon.appiconset/                   Source icon PNGs
-scripts/build-app.sh                  Local app bundle builder
-```
-
-## How it works
-
-`TeleprompterModel` owns script text, playback state, scroll offset, speed, and mic status.
-
-`VoiceActivityDetector` uses `AVAudioEngine` input taps and RMS level checks. Audio above the sensitivity threshold marks speech. A short silence hangover avoids jitter.
-
-`NotchOverlayController` creates a borderless floating `NSPanel` on all spaces and sets `NSWindow.sharingType = .none` so it should not appear in screen sharing or window capture.
-
-`NotchGeometry` uses public `NSScreen` data. macOS does not expose exact notch bounds through public API, so Textream uses a small built-in-display heuristic and draws a fallback notch on other displays.
-
-`NotchOverlayView` draws solid black UI around the notch and a 133px-high scrolling text panel below it.
-
-## Tuning
-
-Hardware varies. If overlay placement needs adjustment, edit these constants in `NotchGeometry` and `NotchOverlayView`:
-
-- `notchWidth`
-- `notchHeight`
-- default overlay height (`notchHeight + 133`)
-- top overlap (`.padding(.top, -8)`)
 
 <p align="center">
   <a href="https://www.buymeacoffee.com/hudsonnicoletti">

@@ -1,3 +1,9 @@
+//
+//  TextReamApp.swift
+//  TextReam
+//  Created by Hudson Nicoletti on 20/07/26.
+//
+
 import SwiftUI
 import AppKit
 import AVFoundation
