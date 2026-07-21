@@ -21,6 +21,7 @@ struct TextreamApp: App {
                 .frame(minWidth: 520, minHeight: 560)
                 .onAppear { appDelegate.bind(model) }
         }
+        .windowStyle(.hiddenTitleBar)
         .windowResizability(.contentSize)
         .commands {
             CommandMenu("Prompter") {
@@ -184,9 +185,9 @@ final class VoiceActivityDetector: @unchecked Sendable {
                 let input = self.engine.inputNode
                 let format = input.outputFormat(forBus: 0)
                 input.removeTap(onBus: 0)
-                input.installTap(onBus: 0, bufferSize: 1024, format: format) { [weak self] buffer, _ in
+                try input.__installTap(onBus: 0, bufferSize: 1024, format: format, error: (), block: { [weak self] buffer, _ in
                     self?.process(buffer, speech: speech)
-                }
+                })
                 self.engine.prepare()
                 try self.engine.start()
                 Task { @MainActor in status("Listening") }
@@ -265,7 +266,7 @@ final class NotchOverlayController {
         w.hidesOnDeactivate = false
         w.hasShadow = false
         w.minSize = NSSize(width: 220, height: 120)
-        w.maxSize = NSSize(width: 640, height: 360)
+        w.maxSize = NSSize(width: 340, height: 360)
         window = w
     }
 
