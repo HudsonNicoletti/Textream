@@ -18,7 +18,7 @@ struct TextreamApp: App {
         WindowGroup("Textream") {
             ControlView()
                 .environmentObject(model)
-                .frame(minWidth: 520, minHeight: 560)
+                .frame(minWidth: 320, minHeight: 580)
                 .onAppear {
                     model.requestMicrophonePermissionOnLaunch()
                     appDelegate.bind(model)
