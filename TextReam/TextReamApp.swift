@@ -20,7 +20,7 @@ struct TextreamApp: App {
                 .environmentObject(model)
                 .frame(minWidth: 520, minHeight: 560)
                 .onAppear {
-                    model.refreshMicrophonePermission()
+                    model.requestMicrophonePermissionOnLaunch()
                     appDelegate.bind(model)
                 }
                 .onReceive(NotificationCenter.default.publisher(for: NSApplication.didBecomeActiveNotification)) { _ in
