@@ -29,19 +29,6 @@ macOS may ask for microphone permission. If blocked:
 
 System Settings → Privacy & Security → Microphone → enable Textream or Terminal.
 
-## Requirements
-
-- macOS 27+
-- Xcode 27+
-
-## Build and run
-
-Open `TextReam.xcodeproj` in Xcode and run the `TextReam` scheme, or build from the command line:
-
-```bash
-xcodebuild -project TextReam.xcodeproj -scheme TextReam build
-```
-
 ## Controls
 
 - Play/Pause starts or stops mic-driven scrolling.
@@ -57,15 +44,3 @@ xcodebuild -project TextReam.xcodeproj -scheme TextReam build
     <img src="https://www.owlstown.com/assets/icons/bmc-yellow-button-941f96a1.png" width="240" />
   </a>
 </p>
-
-## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md).
-
-## Security
-
-See [SECURITY.md](SECURITY.md).
-
-## License
-
-MIT. See [LICENSE](LICENSE).
