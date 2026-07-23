@@ -35,7 +35,11 @@ final class NotchOverlayController {
         w.backgroundColor = .clear
         w.level = .statusBar
         w.collectionBehavior = [.canJoinAllSpaces, .stationary, .ignoresCycle]
+#if DEBUG
+        w.sharingType = .readOnly
+#else
         w.sharingType = .none
+#endif
         w.hidesOnDeactivate = false
         w.hasShadow = false
         w.minSize = NSSize(width: 220, height: 120)
