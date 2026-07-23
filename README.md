@@ -5,9 +5,7 @@ Textream is a tiny macOS teleprompter that lives around the MacBook notch. Paste
 
 Built with SwiftUI, AppKit, and AVAudioEngine. No third-party dependencies.
 
-<p align="center">
-  ![vid](./video.gif)
-</p>
+![vid](./video.gif)
 
 ## Features
 
