@@ -12,28 +12,50 @@ struct WindowResizeGrip: NSViewRepresentable {
 final class ResizeGripView: NSView {
     private var startFrame = CGRect.zero
     private var startMouse = CGPoint.zero
+    private var hoverTrackingArea: NSTrackingArea?
     private lazy var resizeCursor = NSCursor(image: Self.resizeCursorImage(), hotSpot: CGPoint(x: 8, y: 8))
 
-    /// Refreshes cursor regions after SwiftUI attaches the grip.
-    override func viewDidMoveToWindow() {
-        window?.invalidateCursorRects(for: self)
+    /// Tracks hover even though the overlay is a nonactivating panel.
+    override func updateTrackingAreas() {
+        super.updateTrackingAreas()
+        if let hoverTrackingArea { removeTrackingArea(hoverTrackingArea) }
+        let area = NSTrackingArea(
+            rect: .zero,
+            options: [.mouseEnteredAndExited, .activeAlways, .inVisibleRect],
+            owner: self
+        )
+        addTrackingArea(area)
+        hoverTrackingArea = area
     }
 
-    /// Registers the custom resize cursor over the grip.
-    override func resetCursorRects() {
-        addCursorRect(bounds, cursor: resizeCursor)
+    override func mouseEntered(with event: NSEvent) {
+        resizeCursor.set()
+    }
+
+    override func mouseExited(with event: NSEvent) {
+        guard NSEvent.pressedMouseButtons == 0 else { return }
+        NSCursor.arrow.set()
     }
 
     /// Captures frame and pointer origins at drag start.
     override func mouseDown(with event: NSEvent) {
         guard let window else { return }
+        resizeCursor.push()
         startFrame = window.frame
         startMouse = NSEvent.mouseLocation
+    }
+
+    /// Restores the normal cursor after resizing ends.
+    override func mouseUp(with event: NSEvent) {
+        NSCursor.pop()
+        let pointer = convert(event.locationInWindow, from: nil)
+        bounds.contains(pointer) ? resizeCursor.set() : NSCursor.arrow.set()
     }
 
     /// Resizes around center within limits set by the overlay controller.
     override func mouseDragged(with event: NSEvent) {
         guard let window else { return }
+        resizeCursor.set()
         let mouse = NSEvent.mouseLocation
         let dx = mouse.x - startMouse.x
         let dy = mouse.y - startMouse.y
