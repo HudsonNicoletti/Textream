@@ -25,7 +25,7 @@ final class VoiceActivityDetector: @unchecked Sendable {
             let input = engine.inputNode
             let format = input.outputFormat(forBus: 0)
             input.removeTap(onBus: 0)
-            try input.__installTap(onBus: 0, bufferSize: 1024, format: format, error: (), block: { [weak self] buffer, _ in
+            input.installTap(onBus: 0, bufferSize: 1024, format: format, block: { [weak self] buffer, _ in
                 self?.process(buffer, speech: speech)
             })
             engine.prepare()

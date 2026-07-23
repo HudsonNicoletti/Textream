@@ -31,6 +31,10 @@ macOS may ask for microphone permission. If blocked:
 
 System Settings → Privacy & Security → Microphone → enable Textream or Terminal.
 
+## Requirements
+
+- macOS 14.6 or newer
+
 ## Controls
 
 - Play/Pause starts or stops mic-driven scrolling.
